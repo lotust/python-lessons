@@ -32,7 +32,7 @@ word_list = all_text.split()
 print word_list[999]```
 
 3. Find how many vowels are in the text above.
-```letter_list = list(all_text)
+letter_list = list(all_text)
 def vowel_counter(abc):
   vowelcount = 0
   for i in abc:
@@ -47,11 +47,11 @@ def vowel_counter(abc):
     elif i =="u":
       vowelcount += 1
   return vowelcount
-print vowel_counter(letter_list)```
+print vowel_counter(letter_list)
 
-alternatively
+```alternatively```
 
-```def vowelcountr(abc):
+def vowelcountr(abc):
   vowelcountr = 0
   nonvowel = 0
   for i in abc:
@@ -63,4 +63,4 @@ alternatively
   print nonvowel
 
 vowelcountr(letter_list)
-print len(letter_list)  ```
+print len(letter_list)
