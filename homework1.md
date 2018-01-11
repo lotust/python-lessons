@@ -29,4 +29,4 @@ response = urllib2.urlopen('https://github.com/dwyl/english-words/raw/master/wor
 all_text = response.read()
 ```
 
-3.
+3. Find how many vowels are in the text above.
