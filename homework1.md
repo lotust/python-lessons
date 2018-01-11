@@ -49,7 +49,7 @@ def vowel_counter(abc):
   return vowelcount
 print vowel_counter(letter_list)```
 
-####alternatively
+alternatively
 
 ```def vowelcountr(abc):
   vowelcountr = 0
