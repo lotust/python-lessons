@@ -11,6 +11,10 @@ help(stuff)
 # list indexing
 a = [1, 2, 4]
 b = a[2] # b == 4
+
+# list/string slicing
+a = 'hello there'
+b = a[4:8] # b == 'o th'
 ```
 
 1. Make a variable called `well_formed`. It should begin with a capital letter, and not have leading/trailing whitespace. Start from this code:
