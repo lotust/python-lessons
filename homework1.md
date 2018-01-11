@@ -48,3 +48,19 @@ def vowel_counter(abc):
       vowelcount += 1
   return vowelcount
 print vowel_counter(letter_list)```
+
+####alternatively
+
+```def vowelcountr(abc):
+  vowelcountr = 0
+  nonvowel = 0
+  for i in abc:
+    if i in ("a","e","i","o","u"):
+      vowelcountr += 1
+    else:
+      nonvowel += 1
+  print vowelcountr
+  print nonvowel
+
+vowelcountr(letter_list)
+print len(letter_list)  ```
