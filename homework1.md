@@ -24,15 +24,15 @@ well_formed = poorly_formed.strip().capitalize()
 ```
 
 2. Download a list of words, and find the 1000th word. Start with this.
-py
+```py
 import urllib2
 response = urllib2.urlopen('https://github.com/dwyl/english-words/raw/master/words.txt')
 all_text = response.read()
 word_list = all_text.split()
-print word_list[999]
+print word_list[999]```
 
 3. Find how many vowels are in the text above.
-letter_list = list(all_text)
+```letter_list = list(all_text)
 def vowel_counter(abc):
   vowelcount = 0
   for i in abc:
@@ -47,4 +47,4 @@ def vowel_counter(abc):
     elif i =="u":
       vowelcount += 1
   return vowelcount
-print vowel_counter(letter_list)
+print vowel_counter(letter_list)```
