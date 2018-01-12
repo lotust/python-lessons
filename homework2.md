@@ -13,7 +13,7 @@ all_text = response.read()
 
 2. Find the average, median, and mode in this list.
 ```py
-[
+numbers = [
   37, 17, 4, 11, 17, 16, 22, 1, 5, 55,
   15, 4, 6, 1, 7, 17, 45, 19, 1, 30,
   8, 20, 22, 59, 15, 5, 2, 4, 7, 19,
