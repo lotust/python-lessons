@@ -20,6 +20,9 @@ b = a[4:8] # b == 'o th'
 1. Make a variable called `well_formed`. It should begin with a capital letter, and not have leading/trailing whitespace. Start from this code:
 ```py
 poorly_formed = '   boop '
+```
+ANSWER:
+```py
 well_formed = poorly_formed.strip().capitalize()
 ```
 
@@ -37,6 +40,8 @@ print word_list[999]
 ```
 
 3. Find how many vowels are in the text above.
+
+
 MY ANSWER:
 ```py
 letter_list = list(all_text)
