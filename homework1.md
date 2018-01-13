@@ -27,11 +27,18 @@ well_formed = poorly_formed.strip().capitalize()
 ```py
 import urllib2
 response = urllib2.urlopen('https://github.com/dwyl/english-words/raw/master/words.txt')
+
 all_text = response.read()
+```
+MYCODE
+```py
 word_list = all_text.split()
-print word_list[999]```
+print word_list[999]
+```
 
 3. Find how many vowels are in the text above.
+MY ANSWER:
+```py
 letter_list = list(all_text)
 def vowel_counter(abc):
   vowelcount = 0
@@ -48,9 +55,11 @@ def vowel_counter(abc):
       vowelcount += 1
   return vowelcount
 print vowel_counter(letter_list)
+```
 
-```alternatively```
+alternative answer:
 
+```py
 def vowelcountr(abc):
   vowelcountr = 0
   nonvowel = 0
@@ -64,3 +73,4 @@ def vowelcountr(abc):
 
 vowelcountr(letter_list)
 print len(letter_list)
+```
