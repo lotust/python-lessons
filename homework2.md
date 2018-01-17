@@ -11,7 +11,7 @@ response = urllib2.urlopen('https://www.gutenberg.org/files/1342/1342-0.txt')
 all_text = response.read()
 ```
 
-2. Find the average, median, and mode in this list.
+2. Find the [average, median, and mode](http://www.purplemath.com/modules/meanmode.htm) in this list.
 ```py
 numbers = [
   37, 17, 4, 11, 17, 16, 22, 1, 5, 55,
