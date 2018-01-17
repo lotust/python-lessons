@@ -10,8 +10,37 @@ import urllib2
 response = urllib2.urlopen('https://www.gutenberg.org/files/1342/1342-0.txt')
 all_text = response.read()
 ```
+my answer:
 
-2. Find the [average, median, and mode](http://www.purplemath.com/modules/meanmode.htm) in this list.
+```import urllib2
+
+response = urllib2.urlopen('http://www.gutenberg.org/files/1342/1342-0.txt')
+all_text = response.read()
+
+#myanswer
+from collections import Counter
+pride = all_text.split()
+prejudice = Counter(pride).most_common(10)
+print prejudice
+
+pride_words = all_text.split() 
+prejudice_dict = {}
+def wordcounter(pridelist):
+    for i in pridelist:
+        if i in prejudice_dict:
+            prejudice_dict[i] += 1
+        else:
+            prejudice_dict[i] = 1
+def wordsorter(prejudice_dict):
+    sorted_prejudice = [(value, key) for key, value in prejudice_dict.items()]
+    sorted_prejudice.sort(reverse=True)
+    print sorted_prejudice[:10]
+
+wordcounter(pride_words)
+wordsorter(prejudice_dict)
+```
+
+2. Find the average, median, and mode in this list.
 ```py
 numbers = [
   37, 17, 4, 11, 17, 16, 22, 1, 5, 55,
